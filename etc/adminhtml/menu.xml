@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Custom_ImageOptimization::general" title="General" translate="title" module="Custom_ImageOptimization" sortOrder="20" dependsOnModule="Custom_ImageOptimization" resource="Custom_ImageOptimization::general"/>
+        <!--<add id="Custom_ImageOptimization::general" title="General" translate="title" module="Custom_ImageOptimization" sortOrder="0" parent="Magento_Backend::catalog" action="cms/page" resource="Custom_ImageOptimization::general"/>-->
+        <!--<add id="Custom_ImageOptimization::general_helloworld" title="Hello World" translate="title" module="Custom_ImageOptimization" parent="Custom_ImageOptimization::general" sortOrder="10" dependsOnModule="Custom_ImageOptimization" resource="Custom_ImageOptimization::general"/>-->
+        <!--action=""-->
+        <!--https://devdocs.magento.com/guides/v2.2/ext-best-practices/extension-coding/example-module-adminpage.html-->
+    </menu>
+</config> 
