@@ -1,5 +1,5 @@
 <?php
-namespace Custom\ImageOptimization\Model\ResourceModel\Post;
+namespace Custom\ImageOptimization\Model\ResourceModel\Unlink;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {

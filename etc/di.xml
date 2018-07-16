@@ -1,0 +1,23 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <!--https://www.mageplaza.com/magento-2-module-development/create-admin-grid-magento-2.html-->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="custom_imageoptimization_unlink_listing_data_source" xsi:type="string">Custom\ImageOptimization\Model\ResourceModel\Unlink\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Custom\ImageOptimization\Model\ResourceModel\Unlink\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">custom_file_gallery</argument>
+            <argument name="resourceModel" xsi:type="string">Custom\ImageOptimization\Model\ResourceModel\Unlink</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="analysis" xsi:type="object">Custom\ImageOptimization\Console\UnlinkImage</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

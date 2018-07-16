@@ -9,6 +9,16 @@ class Unlink extends \Magento\Framework\Model\AbstractModel implements \Magento\
 
     protected $_eventPrefix = 'custom_file_gallery';
 
+    public function __construct(
+        \Magento\Framework\Model\Context $context,
+        \Magento\Framework\Registry $registry,
+        //\Magento\Framework\Model\Resource\AbstractResource $resource = null,
+        \Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
+        array $data = []
+    ) {
+        parent::__construct($context, $registry, null, $resourceCollection, $data);
+    }
+
     protected function _construct()
     {
         $this->_init('Custom\ImageOptimization\Model\ResourceModel\Unlink');
