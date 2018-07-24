@@ -8,9 +8,9 @@
         <item name="buttons" xsi:type="array">
             <item name="add" xsi:type="array">
                 <item name="name" xsi:type="string">add</item>
-                <item name="label" xsi:type="string" translate="true">Add New Post</item>
+                <item name="label" xsi:type="string" translate="true">Update</item>
                 <item name="class" xsi:type="string">primary</item>
-                <item name="url" xsi:type="string">*/*/new</item>
+                <item name="url" xsi:type="string">customoptimization/unlink/update</item>
             </item>
         </item>
     </argument>
@@ -84,6 +84,16 @@
                         </item>
                     </item>
                     <item name="label" xsi:type="string" translate="true">Path</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="image" class="Custom\ImageOptimization\Ui\Component\Listing\Column\Images">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="sortable" xsi:type="boolean">false</item>
+                    <item name="label" xsi:type="string" translate="true">Image Size</item>
                 </item>
             </argument>
         </column>

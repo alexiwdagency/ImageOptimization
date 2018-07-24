@@ -27,15 +27,6 @@ class UnlinkImage extends Command
     }
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        /*$objectManager = ObjectManager::getInstance();
-        $pp = $objectManager->get('\Custom\ImageOptimization\Model\ResourceModel\Unlink\CollectionFactory');
-        $collection = $pp->create();
-
-        foreach ($collection as $product) {
-
-            var_dump($product->getData());
-        }*/
-
         try{
             $this->helper->updateUnlinkModel();
             echo "function was done successfully";
